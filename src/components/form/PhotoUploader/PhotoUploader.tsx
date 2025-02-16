@@ -44,10 +44,11 @@ export const PhotoUploader: FC<IPhotoUploader> = (props) => {
   return (
     <div>
       <div className="uploader-wrapper">
-        {fields.map((field) => (
+        {fields.map((field, index) => (
           <div key={field.id} className="preview">
-            <img src={field?.file ? URL.createObjectURL(field?.file) : ''}  />
-            <div className="close-btn" onClick={() => handleRemovePhoto(field.id)}>
+            {/* @ts-expect-error: Ошибка, которую мы ожидаем и игнорируем */}
+            <img src={field?.file ? URL.createObjectURL(field.file) : ''}  />
+            <div className="close-btn" onClick={() => handleRemovePhoto(index)}>
               <img src={Close} />
             </div>
           </div>
