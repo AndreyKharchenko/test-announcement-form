@@ -6,11 +6,27 @@
     margin-top: 32px;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .title {
     font-weight: 600;
     font-size: 32px;
     line-height: 44.8px;
     color: #2A2C36;
+}
+
+.prevLink {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
 }
 
 .block {
@@ -98,10 +114,17 @@
         padding: 24px;
     }
     
+    .header {
+        justify-content: center;
+    }
+
     .title {
-        text-align: center;
         font-size: 24px;
         line-height: 33.6px;
+    }
+
+    .prevLink {
+        display: none;
     }
 
     .block .block-name {

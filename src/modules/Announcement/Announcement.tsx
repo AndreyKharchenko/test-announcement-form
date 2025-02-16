@@ -3,6 +3,7 @@ import "./style.css"
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { FormProvider, useForm } from "react-hook-form"
+import ArrowLeft from '../../assets/arrow-left.svg'
 
 export const Announcement = () => {
   const fileScheme = z.instanceof(File).nullable();
@@ -82,7 +83,12 @@ export const Announcement = () => {
 
   return (
     <div className="root">
-      <h1 className="title">Добавить обьявление</h1>
+      <div className="header">
+          <a href="#" className="prevLink">
+            <img src={ArrowLeft} />
+          </a>
+          <h1 className="title">Добавить обьявление</h1>
+      </div>
       <div className="announcement-form">
         <FormProvider {...methods}>
           <form
