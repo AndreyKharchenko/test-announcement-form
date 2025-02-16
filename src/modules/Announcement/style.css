@@ -1,0 +1,131 @@
+.announcement-form {
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 32px;
+    color: #2A2C36;
+    margin-top: 32px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44.8px;
+    color: #2A2C36;
+}
+
+.block {
+    margin-top: 32px;
+}
+
+.block:first-child {
+    margin-top: 0;
+}
+
+.block .block-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+.fields {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: 220px minmax(593px, 1fr);
+    column-gap: 74px;
+}
+
+.field-name {
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+.actions {
+    margin-top: 48px;
+    display: flex;
+    gap: 16px;
+}
+
+.submit-btn,
+.save-btn {
+    width: 180px;
+}
+
+.agreements {
+    margin-top: 24px;
+    max-width: 580px;
+    font-size: 13px;
+    line-height: 18.2px;
+    color: #636570;
+}
+
+.agreements a {
+    color: #636570;
+}
+
+.text-input,
+.textarea-desc,
+.city-select {
+    width: 480px;
+    box-sizing: border-box;
+}
+
+.textarea-desc {
+    min-height: 142px;
+}
+
+.more-info-link {
+    margin-top: 8px;
+}
+
+.phone-hint-text {
+    max-width: 593px;
+}
+
+.error {
+    font-size: 13px;
+    line-height: 18.2px;
+    color: red;
+}
+
+@media (max-width: 480px) {
+    .announcement-form {
+        padding: 24px;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+
+    .block .block-name {
+        font-size: 18px;
+        line-height: 25.2px;
+    }
+
+    .field {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+
+    .text-input,
+    .textarea-desc,
+    .city-select {
+        width: 400px;
+    }
+
+    .actions {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+.radio-wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.radio-btn input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-btn label {
+    display: inline-block;
+	cursor: pointer;
+    padding: 13px 24px;
+	border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+	user-select: none;
+    border: 1px solid #898B94;
+    color: #2A2C36;
+    background: #FFF;
+}
+
+.radio-btn input[type=radio]:checked + label {
+	color: #FFF;
+    background: #2A2C36;
+}

@@ -1,0 +1,28 @@
+.textarea-wrapper {
+    position: relative;
+}
+
+
+.textarea {
+    font-size: 14px;
+    line-height: 19.6px;
+    border-radius: 8px;
+    border: none;
+    background-color: #F6F5FA;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+.textarea.textarea-error {
+    border: 1px solid red;
+}
+
+.textarea-label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: #636570;
+    font-size: 14px;
+    line-height: 19.6px;
+    pointer-events: none;
+}
