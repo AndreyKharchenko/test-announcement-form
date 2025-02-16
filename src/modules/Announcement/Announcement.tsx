@@ -183,7 +183,7 @@ export const Announcement = () => {
                       className="text-input"
                       placeholder="8 ___ ___ - __ - __"
                       isRequired
-                      maxLength={12}
+                      maxLength={11}
                     />
                     <HintText className="phone-hint-text">Чтобы ваши номера не попали в базы мошенников, мы показываем вместо них подменные, а звонки переводим вам. Эту защиту нельзя отключить.</HintText>
                     <HintText className="more-info-link"><a href="#">Подробнее</a></HintText>
