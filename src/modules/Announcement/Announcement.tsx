@@ -29,6 +29,7 @@ export const Announcement = () => {
     ),
     images: z.array(z.object({file: fileScheme})),
     video: z.string()
+    .min(1, { message: "Поле обязательно для заполнения" })
     .refine(
       (value) => {
         return /^http.*\/.*\..*$/.test(value);
@@ -38,7 +39,7 @@ export const Announcement = () => {
           'Введеное значение не является ссылкой',
       }
     ),
-    city: z.string(),
+    city: z.string().min(1, { message: "Поле обязательно для заполнения" }),
     phone: z.string()
     .min(1, { message: "Поле обязательно для заполнения" })
     .refine(
@@ -158,6 +159,7 @@ export const Announcement = () => {
                     name="video"
                     className="text-input"
                     placeholder="Ссылка на видео"
+                    isRequired
                   />
                 </div>
               </div>
@@ -173,6 +175,7 @@ export const Announcement = () => {
                     options={cityOptions}
                     label="Выберите город"
                     className="city-select"
+                    isRequired
                   />
                 </div>
               </div>
